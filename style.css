@@ -599,13 +599,6 @@ body {
     }
 
 
-
-    // .size_map {
-    //     width: 980px;
-    //     height: 300px auto;
-
-    // }
-
     .project {
         display: flex;
         flex-direction: column;
@@ -769,7 +762,7 @@ body {
     }
 
     .size_map {
-        width: 375px;
+        width: 250px;
         height: auto;
 
     }
