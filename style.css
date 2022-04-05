@@ -532,6 +532,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
 }
 
 .map {
@@ -540,11 +541,17 @@ body {
     align-self: center;
 }
 
-@media (max-width: 1024px) {
+.size_map {
+    width: 980px;
+    height: 480px;
+
+}
+
+@media(max-width:1024px) {
     .header {
         margin-top: 36px;
         margin-left: 32px;
-        margin-right: 32px;
+        margin-right: 32px
     }
 
     .top_info {
@@ -558,28 +565,25 @@ body {
     }
 
     .What_we_do {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .heading {
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
     }
 
-    .card-box {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
+    .contact_contaner {
         flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .input {
+        margin: 0;
+    }
+
+    .card-box {
+        flex-direction: column;
         align-items: center;
     }
 
@@ -591,21 +595,20 @@ body {
     .card_img {
         width: 160.43px;
         height: 112.64px;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
     }
 
+
+
+    // .size_map {
+    //     width: 980px;
+    //     height: 300px auto;
+
+    // }
+
     .project {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
         padding-left: 35px;
         padding-right: 35px;
@@ -613,6 +616,12 @@ body {
 
     .footer {
         margin-top: 109px;
+        height: 768px;
+
+    }
+
+    .footer_contant {
+        align-items: center;
     }
 
     .heading {
@@ -635,6 +644,9 @@ body {
 
     .footer_text {
         margin-top: 32px;
+        margin-left: 0;
+        margin-left: 124px;
+
     }
 
     .foot_button {
@@ -642,9 +654,10 @@ body {
         padding: 5px 20px;
         font-size: 16px;
         line-height: 26px;
-        text-align: center;
-        margin-top: 161px;
-        margin-right: 124px;
+        margin-top: 164px;
+        margin-right: 125px;
+
+
     }
 
     .footer_text_PS {
@@ -653,6 +666,20 @@ body {
         font-size: 16px;
         line-height: 19px;
         margin-top: 32px;
+        margin-bottom: 40px;
+    }
+
+    .footer_line {
+        margin-top: 64px;
+        margin-bottom: 64px;
+
+    }
+
+
+    .List {
+        display: flex;
+        flex-direction: column;
+
     }
 
     .All {
@@ -662,15 +689,16 @@ body {
         letter-spacing: 0.05em;
         color: #FFFFFF;
         opacity: 0.4;
-        margin-left: 113px;
+        margin-left: 100px;
         margin-top: 64px;
     }
 }
 
-@media(max-width:768px) {
+
+@media(max-width:667px) {
 
     .top {
-        height: 500px;
+        height: auto;
     }
 
     header {
@@ -688,6 +716,25 @@ body {
         letter-spacing: 0.04em;
         color: #1F3F68;
         margin-top: 36px;
+    }
+
+    .top_contact {
+        margin-bottom: 0;
+    }
+
+    .adress_header {
+        margin-top: 64px;
+    }
+
+    .input_enter {
+        width: 271px;
+        height: 46px;
+    }
+
+    .area {
+        width: 271px;
+
+        height: 92px;
     }
 
     .top_info {
@@ -712,122 +759,155 @@ body {
         margin-top: 32px;
     }
 
+    .input {
+        width: auto;
+    }
+
+
+    .button {
+        width: 271px;
+    }
+
+    .size_map {
+        width: 375px;
+        height: auto;
+
+    }
+
     .heading {
         width: 360px;
         font-size: 24px;
         line-height: 28px;
-        margin: 0;
         margin-top: 48px;
+        margin-bottom: 0;
     }
 
 
     .What_we_do {
         padding-top: 0;
-    }
 
-    .card {
-        padding: 21px 30px;
-        margin-top: 32px;
-    }
 
-    .text_project {
-        color: #222222;
-        text-align: center;
-        width: 343px;
-        margin-top: 32px;
-        margin-bottom: 98px;
+        .card-box {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .card {
+            padding: 21px 30px;
+            margin-top: 32px;
+        }
     }
 
     .project {
         padding-left: 15px;
         padding-right: 15px;
+
+        .project_parant {
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+        }
+
+        .project_item_left {
+            margin: 0;
+            margin-bottom: 16px;
+        }
+
+        .project_text {
+            font-size: 16px;
+            line-height: 19px;
+            top: 16px;
+            right: 16px;
+
+
+        }
+
+        .text_project {
+            width: 364px;
+        }
+
+        .project_text_min {
+            font-size: 16px;
+            line-height: 19px;
+            top: 26px;
+            left: 16px;
+        }
+
+
+
     }
 
-    .project_parant {
+    .header_contact {
+        margin: 18px 16px 30px;
         display: flex;
-        flex-direction: column;
-        margin-top: 16px;
+        justify-content: space-between;
     }
 
-    .project_item_left {
-        margin: 0;
-        margin-bottom: 16px;
+    .contact_content {
+        margin-top: 0;
+
     }
 
-    .project_text {
-        font-size: 16px;
-        line-height: 19px;
-        top: 16px;
-        right: 16px;
+    .top_contact {
+        font-size: 24px;
+        line-height: 28px;
     }
 
-    .project_text_min {
-        font-size: 16px;
-        line-height: 19px;
-        top: 26px;
-        left: 16px;
-    }
+
+
 
     .footer {
         margin-top: 64px;
-    }
 
-    .footer_contant {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 18px 15px 32px;
-        align-self: center;
-        align-items: center;
-    }
+        .footer_contant {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 18px 15px 32px;
+        }
 
-    .intersted {
-        width: 250px;
-        font-size: 24px;
-        line-height: 28px;
-        margin: 0;
-        align-self: center;
-    }
+        .intersted {
+            width: 250px;
+            font-size: 24px;
+            line-height: 28px;
+            margin: 0;
+            align-self: center;
+        }
 
-    .footer_text {
-        width: 304px;
-        margin: 0;
-        font-size: 16px;
-        line-height: 19px;
-        align-self: center;
-        margin-top: 17px;
+        .footer_text {
+            width: 304px;
+            margin: 0;
+            font-size: 16px;
+            line-height: 19px;
+            align-self: center;
+            margin-top: 32px;
+        }
 
-    }
+        .foot_button {
+            width: 108px;
+            margin: 40px 115px 0;
+            padding: 5px 20px;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+        }
 
-    .foot_button {
-        width: 108px;
-        padding: 5px 20px;
-        font-size: 16px;
-        line-height: 26px;
+        .footer_line {
+            margin-top: 41px;
+        }
 
-        margin: 0;
-        margin-top: 40px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        align-self: center;
-        margin-top: 40px;
-    }
+        .List {
+            flex-direction: column;
+            padding-left: 56px;
+        }
 
-    .footer_line {
-        margin-top: 41px;
-        margin-bottom: 32px;
-    }
+        .All {
+            margin: 0;
+            margin-top: 64px;
+            align-self: center;
+        }
 
-    .List {
-        flex-direction: column;
-        padding-left: 56px;
-    }
 
-    .All {
-        margin: 0;
-        margin-top: 64px;
-        align-self: center;
     }
 }
